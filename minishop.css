@@ -2,7 +2,14 @@ T1 {
 font-size: 2vw;
 color:white;
 text-align:center;
-font-family:Helvetica;
+font-family:Verdana;
+text-shadow: 2px 2px black;
+}
+T3 {
+font-size: 4vw;
+color:white;
+text-align:center;
+font-family:Verdana;
 text-shadow: 2px 2px black;
 }
 BODY {
@@ -30,12 +37,14 @@ width:all;
 	width:12%;
 	float:left;
 	padding-bottom:2px;
+  background-color:#328CA8;
 }
 #block_left{
 	margin-top: 0.5%;
 	margin-left:5%;
 }
 #middle_block{
+  background-color:#3B7080;
 	width:60%;
 	height:80%;
 	float:left;
@@ -49,14 +58,12 @@ width:all;
 }
 
 .block{
-	border-radius:12px;
-	box-shadow:12px 12px 12px #000000;
-}
-.all_block{
-	background-color:#00c5c5;
+	border-radius:15px;
+	box-shadow:15px 15px 15px black;
 }
 
 .header{
+  background-color:#2A758C;
 	position: relative;
 	width:95%;
 	height:15%;
@@ -77,8 +84,7 @@ width:all;
 }
 
 .list {
-
-color:red;
+color:green;;
 }
 
 
