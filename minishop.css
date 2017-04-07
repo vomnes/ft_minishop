@@ -70,6 +70,18 @@ width:all;
 	margin-bottom:2.5%;
 }
 
+.header_upright{
+  background-color:#2A758C;
+  text-align: center;
+	position:fixed;
+  right:-10px;
+  top:-10px;
+	width:30%;
+	height:4%;
+  padding:2px
+
+}
+
 .float_left{
 	float:left;
 }
