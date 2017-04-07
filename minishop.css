@@ -1,0 +1,85 @@
+T1 {
+font-size: 2vw;
+color:white;
+text-align:center;
+font-family:Helvetica;
+text-shadow: 2px 2px black;
+}
+BODY {
+background-position:top center;
+background-size:200%;
+color:black;
+background-color: black;
+background-image:url("http://divertissements.letopdugratuit.com/wallpapers/img/3d-paysages/3d-paysages-0016.jpg");
+background-repeat:no-repeat;
+}
+#sign {
+vertical-align:bottom;
+text-align:right;
+color:white;
+font-style:italic;
+font-family:monospace;
+    }
+#line {
+color:white;
+vertical-align:bottom;
+width:all;
+}
+.side_block{
+	height:50%;
+	width:12%;
+	float:left;
+	padding-bottom:2px;
+}
+#block_left{
+	margin-top: 0.5%;
+	margin-left:5%;
+}
+#middle_block{
+	width:60%;
+	height:80%;
+	float:left;
+	margin-left:2.5%;
+	padding:0.5%;
+}
+
+.container{
+	margin-top:20px;
+	height:100%;
+}
+
+.block{
+	border-radius:12px;
+	box-shadow:12px 12px 12px #000000;
+}
+.all_block{
+	background-color:#00c5c5;
+}
+
+.header{
+	position: relative;
+	width:95%;
+	height:15%;
+	margin-bottom:2.5%;
+}
+
+.float_left{
+	float:left;
+}
+
+.float_right{
+	float:right;
+}
+
+.selected{
+	border:7px solid #FF0000;
+	border-radius: 5px;
+}
+
+.list {
+
+color:red;
+}
+
+
+}
