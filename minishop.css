@@ -1,5 +1,5 @@
 T1 {
-font-size: 2vw;
+font-size: 1.5vw;
 color:white;
 text-align:center;
 font-family:Verdana;
@@ -14,11 +14,11 @@ text-shadow: 2px 2px black;
 }
 BODY {
 background-position:top center;
-background-size:200%;
+background-size:100%;
 color:black;
 background-color: black;
-background-image:url("http://divertissements.letopdugratuit.com/wallpapers/img/3d-paysages/3d-paysages-0016.jpg");
-background-repeat:no-repeat;
+background-image:url("http://www.freebiesgallery.com/wp-content/uploads/2012/08/dark-website-backgrounds-11.jpg");
+background-repeat: repeat;
 }
 #sign {
 vertical-align:bottom;
