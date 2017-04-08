@@ -68,13 +68,12 @@ width:all;
   width: 30%;
 }
 .side_block{
-	height:80%;
+	height:28%;
 	width:250px;;
 	float:left;
   position:fixed;
   background-color:#328CA8;
   border: 0.5px solid white;
-	height:100%;
 }
 #block_left{
 	left:28px;
@@ -84,7 +83,7 @@ width:all;
   background-color:#2E4172;
   position:relative;
 	width:1200px;
-	height:80%;
+	height:70%;
 	margin-left:300px;
 	padding:1%;
   border : 0.5px solid white;
@@ -93,7 +92,7 @@ width:all;
 }
 
 .block{
-  border-radius: 2px;
+  border-radius: 5px;
 	box-shadow:15px 15px 15px black;
 }
 
