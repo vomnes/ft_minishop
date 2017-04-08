@@ -8,16 +8,16 @@
 <body>
 	<div class="header">
 	<img src="http://art42.fr/resources/42_logo_white.png" style="margin-left:20px; margin-top:7px"; width=70px;>
- 	<T3><a href="./index.html">Ft_minishop</a></T3>
+ 	<T3><a href="./index.php">Ft_minishop</a></T3>
 	<div id="nav-menu">
 	<T1>
 		<nav>
 			<ul>
-				<li><a href="./index.html">Home</a></li>
-				<li><a href="./best.html">Best Seller</a></li>
-				<li><a href="./profile.html">Profile</a></li>
-				<li><a href="./cart.html">Cart</a></li>
-				<li><a href="./log.html">Login</a></li>
+				<li><a href="./index.php">Home</a></li>
+				<li><a href="./best.php">Best Seller</a></li>
+				<li><a href="./profile.php">Profile</a></li>
+				<li><a href="./cart.php">Cart</a></li>
+				<li><a href="./log.php">Login</a></li>
 			</ul>
 		</T1>
 		</nav>
@@ -29,17 +29,16 @@
 
 	<br /><T2>Platform</T2><br /><br /><hr>
 	<div class="links">
-		<a href="./xbox.html">Xbox ONE</a><br /><hr>
-		<a href="./play.html">PlayStation 4</a><br /><hr>
-		<a href="./steam.html">Steam</a></li><br /><hr>
-		<a href="./battle.html">Battle.net</a><br /><hr>
-		<a href="./switch.html">Switch</a><br />
+		<a href="./xbox.php">Xbox ONE</a><br /><hr>
+		<a href="./play.php">PlayStation 4</a><br /><hr>
+		<a href="./steam.php">Steam</a></li><br /><hr>
+		<a href="./battle.php">Battle.net</a><br /><hr>
+		<a href="./switch.php">Switch</a><br />
 	</div>
 
 </div>
 <div class="block" id="middle_block">
-
-	<T2>Playstation 4 Games</T2></br >
+	<img src="https://d37wg8gb8tk3bf.cloudfront.net/img/logos/xb1_logo.png">
 
 </div>
 </center>

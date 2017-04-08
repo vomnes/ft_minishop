@@ -43,6 +43,10 @@ FAMILY{
   margin-left: -58px;
 }
 
+LOG{
+  margin-left: -35px;
+}
+
 a {
   color:white!important;
   text-decoration: none;
