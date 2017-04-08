@@ -53,12 +53,28 @@ function connect_and_return($need, $from)
 	<img src="https://d37wg8gb8tk3bf.cloudfront.net/img/logos/xb1_logo.png"><br/><br />
 <div class="platform_prod">
 <?php
+	$n = 0;
 	$query_result = connect_and_return("*", "games");
 	while ($row = mysqli_fetch_assoc($query_result))
 	{
-		print_r($row);
+		$game[$n]=$row;
+		$n++;
 	};
+	$n = 0;
+	while ($game[$n])
+	{
+		if ($game[$n]['platform'] == "Xbox")
+			$xbox[$n] = $game[$n];
+		$n++;
+	}
+	$n = 0;
+	while ($xbox[$n]){
+		$pict_link[$n]="'https://" . $xbox[$n]['picture'] . "''";
+		echo "<img src=$pict_link[$n]";
+		$n++;
+	}
 ?>
+
 
 </div>
 </center>
