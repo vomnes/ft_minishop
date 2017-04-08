@@ -47,6 +47,14 @@ LOG{
   margin-left: -35px;
 }
 
+ERROR{
+  color:red;
+  font-size: 42px;
+  text-align:center;
+  font-family:'Lobster', cursive;
+  text-shadow: 2px 2px white;
+}
+
 a {
   color:white!important;
   text-decoration: none;

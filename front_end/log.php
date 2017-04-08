@@ -1,6 +1,4 @@
-
-
-
+<?php $_SESSION['error_signin']="test d'erreur"; ?>
 <html lang="fr">
 	<meta charset="UTF-8">
 <head>
@@ -67,7 +65,7 @@
 				</T1>
 					<input type="submit" name="submit" title="OK" id="submit" value="OK"/>
 				</form>
-				<?php echo $_SESSION['error_signin'] ?>
+				<ERROR><?php echo $_SESSION['error_signin'] ?></ERROR>
 			</div>
 </div>
 </center>
