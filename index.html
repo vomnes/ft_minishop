@@ -3,17 +3,23 @@
 <head>
 	<title>ft_minishop</title>
 	<link rel="stylesheet" type="text/css" href="minishop.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Press+Start+2P" rel="stylesheet">
 </head>
 <body>
-<center><caption><T3>Ft_minishop</T3><BR /></caption></center>
-<div class="block header_upright">
-	<br />
-	<T1>Formulaire de login</T1>
-</div>
-<center class="container">
-	<div class="block header">
-		<T1>Menu - panier - profile - déconnecter etc..</T1>
+	<div class="header">
+ 	<T3>Ft_minishop</T3>
+		<div class="form"
+		<form  action="create.php" method="POST">
+			<T1>
+		  Login: <input type="text" name="login" id="log_input"/>
+			Password: <input type="password" name="passwd" id="pass_input"/>
+		</T1>
+			<input type="submit" name="submit" title="OK" id="submit" value="OK" />
+		</form>
 	</div>
+	</div>
+<center class="container">
+
 <div class="block  side_block" id="block_left">
 		<T1>Categories des produits</T1>
 </div>
@@ -34,9 +40,6 @@
 	        </select>
 	    </span>
 	</label>
-</div>
-<div class="block side_block" style="margin-left:25px">
-	<T1>Panier et recap.</T1>
 </div>
 </center>
 <br/ >
