@@ -50,6 +50,7 @@
 			</T1>
 				<input type="submit" name="submit" title="OK" id="submit" value="OK"/>
 		</form>
+		<?php echo $_SESSION['error_login'] ?>
 	</div>
 </br ></br ></br ><hr></br >
 	<T1>If you don't have any account yet, please</T1><br />
@@ -66,6 +67,7 @@
 				</T1>
 					<input type="submit" name="submit" title="OK" id="submit" value="OK"/>
 				</form>
+				<?php echo $_SESSION['error_signin'] ?>
 			</div>
 </div>
 </center>
