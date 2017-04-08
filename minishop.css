@@ -1,5 +1,5 @@
 T1 {
-font-size: 1.5vw;
+font-size: 21px;
 color:white;
 text-align:center;
 font-family:'Lobster', cursive;
@@ -7,10 +7,19 @@ text-shadow: 2px 2px black;
 }
 T3 {
 margin-left: 2%;
-font-size: 42px;
+font-size: 2vw;
 color:white;
 text-align:center;
 font-family:'Press Start 2P', cursive;
+text-shadow: 4px 4px #2E4172;
+line-height: 65px;
+}
+T2 {
+margin-left: 2%;
+font-size: 42px;
+color:white;
+text-align:center;
+font-family:'Lobster', cursive;
 text-shadow: 2px 2px black;
 }
 BODY {
@@ -20,6 +29,15 @@ color:black;
 background-color: black;
 background-image:url("http://www.freebiesgallery.com/wp-content/uploads/2012/08/dark-website-backgrounds-11.jpg");
 background-repeat: repeat;
+}
+
+PASS {
+  margin-left: -38px;
+}
+
+a {
+  color:white!important;
+  text-decoration: none;
 }
 #sign {
 vertical-align:bottom;
@@ -35,43 +53,42 @@ width:all;
 }
 
 #submit {
+  margin-left: 10px;
   border-radius: 5px;
-  width:10%;
-  background-color:lightblue;
-  color:black;
+  width:20%;
+  background-color:#162955;
+  color:white;
 }
 
 #log_input{
-  width: 10%;
+  width: 30%;
 }
 
 #pass_input{
-  width: 10%;
+  width: 30%;
 }
 .side_block{
-	height:100%;
-	width:200px;;
+	height:80%;
+	width:250px;;
 	float:left;
   position:fixed;
-	padding-bottom:2px;
   background-color:#328CA8;
   border: 0.5px solid white;
+	height:100%;
 }
 #block_left{
-	left:-10px;
+	left:28px;
+  background-color: #162955;
 }
 #middle_block{
-  background-color:#3B7080;
-  position:fixed;
-	width:800px;
+  background-color:#2E4172;
+  position:relative;
+	width:1200px;
 	height:80%;
-	margin-left:25%;;
-	padding:0.5%;
+	margin-left:300px;
+	padding:1%;
   border : 0.5px solid white;
-}
-
-.container{
-	margin-top:150px;
+  margin-top:95px;
 	height:100%;
 }
 
@@ -81,16 +98,13 @@ width:all;
 }
 
 .header{
-  background-color:#2A758C;
+  background-color:#061539;
 	width:100%;
-	height:10%;
-  line-height:65px;
+	height:65px;
   position:fixed;
   top:0px;
   left:0px;
-	margin-bottom:2.5%;
   z-index: 2;
-  box-shadow:15px 15px 15px black;
   border-bottom: 2px solid lightblue;
 }
 
@@ -103,14 +117,106 @@ width:all;
 }
 
 .form {
-  position: fixed;
-  right:-170px;
-  margin-right: 2.5%;
+  margin: 0 auto;
+  width : 350px;
 }
 
 .list {
-color:green;;
+color:green;
 }
 
+.links {
+  font-size: 20px;
+  color:white!important;
+  text-align:center;
+  font-family:'Lobster', cursive;
+  text-shadow: 2px 2px black;
+  text-decoration: none!important;
+}
+
+#nav-menu
+{
+	float: right;
+	height: 50px;
+  top:0px;
+  right:0px;
+	border-radius: 5px;
+}
+
+nav { text-align: center; position: fixed; z-index: 999; width: 500px; }
+
+nav ul ul { display: none; }
+
+nav ul li:hover > ul { display: block; }
+
+nav ul
+{
+	background: #061539;
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	border-radius: 5px;
+	width: 440px;
+	list-style: none;
+	position: fixed;
+  top:0px;
+  right:0px;
+	display: inline-table;
+}
+
+nav ul:after
+{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+nav ul li
+{
+	float: left;
+}
+
+.nob
+{
+	border-bottom-left-radius: 0px!important;
+	border-bottom-right-radius: 0px!important;
+}
+
+nav ul li:hover
+{
+	background: #161539;
+	border-radius: 5px;
+	background: linear-gradient(top, #161539 0%, #4F628E 80%);
+	background: -moz-linear-gradient(top, #161539 0%, #4F628E 80%);
+	background: -webkit-linear-gradient(top, #161539 0%,#4F628E 80%);
+}
+
+nav ul li:hover a { color:white; }
+
+nav ul li a
+{
+	display: block;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+nav ul ul
+{
+	background: #162955;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+}
+
+nav ul ul li
+{
+	float: none;
+	border-bottom: 1px solid #4F628E;
+	position: relative;
+}
+
+nav ul ul li a { padding: 15px 0px; color: white; font-size: 13px;}
+nav ul ul li a:hover { background: #2E4172; }
+nav ul ul ul { position: absolute; left: 100%; top:0; }
 
 }
