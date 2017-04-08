@@ -44,7 +44,6 @@
 	<div class="form">
 		<form  action="../back_end/backend_modif.php" method="POST">
 			<T1>
-				<log>Login:</log> <input type="text" name="login" id="log_input"/><br /><br />
 				<pass_c>Old Password:</pass_c> <input type="password" name="old_pass" id="pass_input"/><br/><br />
 				<pass_c>New Password:</pass_c> <input type="password" name="new_pass" id="pass_input"/><br/ ><br />
 			</T1>
