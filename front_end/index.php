@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html lang="fr">
 	<meta charset="UTF-8">
 <head>
@@ -13,6 +14,7 @@
 	<T1>
 		<nav>
 			<ul>
+				<li><a>Hello <?php echo $_SESSION['loggued_on_user']; ?></a></li>
 				<li><a href="./index.php">Home</a></li>
 				<li><a href="./best.php">Best Seller</a></li>
 				<li><a href="./profile.php">Profile</a></li>

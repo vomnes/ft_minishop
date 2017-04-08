@@ -1,4 +1,6 @@
-<?php $_SESSION['error_signin']="test d'erreur"; ?>
+<?php
+session_start();
+?>
 <html lang="fr">
 	<meta charset="UTF-8">
 <head>
@@ -40,15 +42,15 @@
 </div>
 <div class="block" id="middle_block">
 	<T2>Login</T2></br ></br>
-	<div class="form"
+	<div class="form">
 		<form  action="../back_end/backend_login.php" method="POST">
 			<T1>
-				Login: <input type="text" name="login" id="log_input"/><br/ ><br />
-				<pass>Password:</pass> <input type="password" name="passwd" id="pass_input"/><br/ ><br/ >
+				Login: <input type="text" name="login_a" id="log_input"/><br/ ><br />
+				<pass>Password:</pass> <input type="password" name="passwd_a" id="pass_input"/><br/ ><br/ >
 			</T1>
 				<input type="submit" name="submit" title="OK" id="submit" value="OK"/>
 		</form>
-		<?php echo $_SESSION['error_login'] ?>
+		<?php echo $_GET['login_action'] ?>
 	</div>
 </br ></br ></br ><hr></br >
 	<T1>If you don't have any account yet, please</T1><br />
@@ -65,7 +67,7 @@
 				</T1>
 					<input type="submit" name="submit" title="OK" id="submit" value="OK"/>
 				</form>
-				<ERROR><?php echo $_SESSION['error_signin'] ?></ERROR>
+				<ERROR><?php echo $_GET['action'] ?></ERROR>
 			</div>
 </div>
 </center>
