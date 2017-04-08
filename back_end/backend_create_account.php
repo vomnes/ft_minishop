@@ -1,5 +1,5 @@
 <?php
-    include("backend_insert.php");
+    include("../back_end/backend_insert.php");
     function protect_input($cn, $input)
     {
       $protected = mysqli_real_escape_string($cn, $input);
@@ -21,20 +21,23 @@
       }
       return FALSE;
     }
-    if ($_POST['login'] == '' || $_POST['password'] == '' || \
-    $_POST['family_name'] == '' || $_POST['first_name'] == '' \
-    $_POST['email'] == '')
+    if ($_POST['login'] === "" || $_POST['password'] === "" || $_POST['family_name'] === "" || $_POST['first_name'] === "" || $_POST['email'] === "")
     {
       echo "Error input\n";
+      return ;
+    }
+    if ($_POST['password'] !== $_POST['password_conf'])
+    {
+      echo "Wrong password confirmation\n";
       return ;
     }
     if (check_login_exit($cn, $_POST['login']) == FALSE)
     {
       print_r($_POST);
-      add_user(protect_input($cn, $_POST['login']), \
-      protect_input($cn, $_POST['password']), \
-      protect_input($cn, $_POST['family_name']), \
-      protect_input($cn, $_POST['first_name']), \
+      add_user(protect_input($cn, $_POST['login']),
+      protect_input($cn, $_POST['password']),
+      protect_input($cn, $_POST['family_name']),
+      protect_input($cn, $_POST['first_name']),
       protect_input($cn, $_POST['email']), 0, $cn);
       echo "User created<br />";
     }
@@ -42,9 +45,4 @@
     {
       echo "Login already used<br />\n";
     }
-    // while (mysqli_fetch_assoc($query_result))
-    // {
-    //   echo "$query_result['login']\n";
-    // }
-    // mysql_real_escape_string
 ?>
