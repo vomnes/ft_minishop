@@ -1,5 +1,5 @@
 <?php
-    include("../back_end/backend_insert.php");
+    include("backend_insert.php");
     function protect_input($cn, $input)
     {
       $protected = mysqli_real_escape_string($cn, $input);
