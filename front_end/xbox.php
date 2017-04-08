@@ -1,3 +1,15 @@
+<?php
+function connect_and_return($need, $from)
+{
+	$cn = mysqli_connect('localhost', 'root', 'root');
+	if (mysqli_connect_errno()) {
+			die ("Connection failed: " . mysqli_connect_error() . "\n");
+	}
+	mysqli_select_db($cn, 'ft_minishop');
+	$query = "SELECT $need FROM $from";
+	return($query_result = mysqli_query($cn, $query));
+}
+?>
 <html lang="fr">
 	<meta charset="UTF-8">
 <head>
@@ -38,7 +50,15 @@
 
 </div>
 <div class="block" id="middle_block">
-	<img src="https://d37wg8gb8tk3bf.cloudfront.net/img/logos/xb1_logo.png">
+	<img src="https://d37wg8gb8tk3bf.cloudfront.net/img/logos/xb1_logo.png"><br/><br />
+<div class="platform_prod">
+<?php
+	$query_result = connect_and_return("*", "games");
+	while ($row = mysqli_fetch_assoc($query_result))
+	{
+		print_r($row);
+	};
+?>
 
 </div>
 </center>

@@ -6,10 +6,10 @@
         else
             exit ();
       }
-      function add_game($name, $picture, $price, $video, $details, $connection)
+      function add_game($name, $picture, $price, $video, $details, $platform, $connection)
       {
-        $add_game = "INSERT INTO games (name, picture, price, video, details)
-                     VALUES ('$name', '$picture', '$price', '$video', '$details')";
+        $add_game = "INSERT INTO games (name, picture, price, video, details, platform)
+                     VALUES ('$name', '$picture', '$price', '$video', '$details', '$platform')";
         ft_mysqli_query($add_game, $connection, "Add game -> $name");
       }
       function add_user($login, $password, $family_name, $first_name, $email, $is_admin, $connection)
@@ -19,4 +19,21 @@
                       VALUES ('$login', '$password', '$family_name', '$first_name', '$email', $is_admin)";
         ft_mysqli_query($add_user, $connection, "Add user -> $login");
       }
+
+
+      function connect_and_return($need, $from)
+      {
+        $cn = mysqli_connect('localhost', 'root', 'root');
+        if (mysqli_connect_errno()) {
+            die ("Connection failed: " . mysqli_connect_error() . "\n");
+        }
+        mysqli_select_db($cn, 'ft_minishop');
+        $query = "SELECT $need FROM $from";
+        return($query_result = mysqli_query($cn, $query));
+      }
+
+
+
+
+
 ?>

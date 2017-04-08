@@ -6,10 +6,10 @@
       else
           echo "$action : [<span style=\"color:red;\">Error</span>]" . mysqli_error($connection) . "<br />";
     }
-    function add_game($name, $picture, $price, $video, $details, $connection)
+    function add_game($name, $picture, $price, $video, $details, $platform, $connection)
     {
-      $add_game = "INSERT INTO games (name, picture, price, video, details)
-                   VALUES ('$name', '$picture', '$price', '$video', '$details')";
+      $add_game = "INSERT INTO games (name, picture, price, video, details, platform)
+                   VALUES ('$name', '$picture', '$price', '$video', '$details', '$platform')";
       ft_mysqli_query($add_game, $connection, "Add game -> $name");
     }
     function add_user($login, $password, $family_name, $first_name, $email, $is_admin, $connection)
@@ -45,13 +45,22 @@
       (
         product_id INT PRIMARY KEY AUTO_INCREMENT,
         name VARCHAR(255),
-        picture VARCHAR(255),
+        picture VARCHAR(512),
         price INT,
-        video VARCHAR(255),
-        details VARCHAR(2000)
+        video VARCHAR(512),
+        details VARCHAR(2000),
+        platform VARCHAR(255)
       )";
       ft_mysqli_query($games, $connection, "Create table games");
-      add_game("my_game2", "my_picture.com", 99, "my_video.com", "Details", $connection);
+      add_game("Halo", "www.halopedia.org/images/thumb/0/0e/H5_final_cover_art.png/300px-H5_final_cover_art.png", 70, "www.youtube.com/watch?v=Rh_NXwqFvHc", "Best game ever", "Xbox", $connection);
+      add_game("Fifa 17", "images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcoYBrJRe6ocDBW_8MGfBUlzYTrjKUmdO25Ts6oNYyGWAkYSxrvqcTDsmxyaK.F1IqrboD6wZ9D7PxkW.7f3yPwuleRxoJ5_eA7x9kcNQIDHZ19t8y8WF.M3NBp9LRmc.ZLDBr6fUv9AvtvXwJ1mvad8Yq5oyC5iYI48SK27sgadU-&w=200&h=300&format=jpg", 80, "www.youtube.com/watch?v=P9LHzVEPodg", "The same that\'s 16 but 17", "Xbox", $connection);
+      add_game("Fifa 17", "images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcoYBrJRe6ocDBW_8MGfBUlzYTrjKUmdO25Ts6oNYyGWAkYSxrvqcTDsmxyaK.F1IqrboD6wZ9D7PxkW.7f3yPwuleRxoJ5_eA7x9kcNQIDHZ19t8y8WF.M3NBp9LRmc.ZLDBr6fUv9AvtvXwJ1mvad8Yq5oyC5iYI48SK27sgadU-&w=200&h=300&format=jpg", 80, "www.youtube.com/watch?v=P9LHzVEPodg", "The same that\'s 16 but 17", "PS4", $connection);
+      add_game("Fifa 17", "images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcoYBrJRe6ocDBW_8MGfBUlzYTrjKUmdO25Ts6oNYyGWAkYSxrvqcTDsmxyaK.F1IqrboD6wZ9D7PxkW.7f3yPwuleRxoJ5_eA7x9kcNQIDHZ19t8y8WF.M3NBp9LRmc.ZLDBr6fUv9AvtvXwJ1mvad8Yq5oyC5iYI48SK27sgadU-&w=200&h=300&format=jpg", 80, "www.youtube.com/watch?v=P9LHzVEPodg", "The same that\'s 16 but 17", "Steam", $connection);
+      add_game("MGS V", "upload.wikimedia.org/wikipedia/en/8/8f/Metal_Gear_Solid_V_The_Phantom_Pain_cover.png", 60, "www.youtube.com/watch?v=A9JV0EvCkMI", "Best infiltration game", "Xbox", $connection);
+      add_game("MGS V", "upload.wikimedia.org/wikipedia/en/8/8f/Metal_Gear_Solid_V_The_Phantom_Pain_cover.png", 60, "www.youtube.com/watch?v=A9JV0EvCkMI", "Best infiltration game", "PS4", $connection);
+      add_game("OverWatch", "jeu.video/wp-content/uploads/2016/09/overwatch-jaquette.png", 40, "www.youtube.com/results?search_query=overwatch", "Best Team play game ever", "Battlenet", $connection);
+      add_game("OverWatch", "jeu.video/wp-content/uploads/2016/09/overwatch-jaquette.png", 40, "www.youtube.com/results?search_query=overwatch", "Best Team play game ever", "Xbox", $connection);
+      add_game("OverWatch", "jeu.video/wp-content/uploads/2016/09/overwatch-jaquette.png", 40, "www.youtube.com/results?search_query=overwatch", "Best Team play game ever", "PS4", $connection);
       $users = "CREATE TABLE users
       (
           id_user INT PRIMARY KEY AUTO_INCREMENT,
