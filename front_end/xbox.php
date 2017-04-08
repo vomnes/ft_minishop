@@ -9,6 +9,37 @@ function connect_and_return($need, $from)
 	$query = "SELECT $need FROM $from";
 	return($query_result = mysqli_query($cn, $query));
 }
+
+function check_plateform($query_result, $platform_check)
+{
+	$n = 0;
+	while ($row = mysqli_fetch_assoc($query_result))
+	{
+		$game[$n]=$row;
+		$n++;
+	}
+	$n = 0;
+	while ($game[$n])
+	{
+		if ($game[$n]['platform'] == $platform_check)
+			$good[$n] = $game[$n];
+		$n++;
+	}
+	return($good);
+}
+
+function curPageURL() {
+ $pageURL = 'http';
+ if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+ $pageURL .= "://";
+ if ($_SERVER["SERVER_PORT"] != "80") {
+  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+ } else {
+  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+ }
+ return $pageURL;
+}
+
 ?>
 <html lang="fr">
 	<meta charset="UTF-8">
@@ -53,26 +84,20 @@ function connect_and_return($need, $from)
 	<img src="https://d37wg8gb8tk3bf.cloudfront.net/img/logos/xb1_logo.png"><br/><br />
 <div class="platform_prod">
 <?php
-	$n = 0;
 	$query_result = connect_and_return("*", "games");
-	while ($row = mysqli_fetch_assoc($query_result))
-	{
-		$game[$n]=$row;
-		$n++;
-	};
+	$test=curPageURL();
+	preg_match_all('/.*\/(.{0,}).php\.*/e', $test, $greped);
+	$platform = $greped[1][0];
+	$data = check_plateform($query_result, $platform);
 	$n = 0;
-	while ($game[$n])
-	{
-		if ($game[$n]['platform'] == "Xbox")
-			$xbox[$n] = $game[$n];
+	while ($data[$n]){
+		$price=$data[$n]['price'];
+		$pict_link[$n]="'https://" . $data[$n]['picture'] . "''";
+		echo "<img src=$pict_link[$n]><br /><br /><br /><br />";
+		echo"<T1>$price</T1>";
 		$n++;
 	}
-	$n = 0;
-	while ($xbox[$n]){
-		$pict_link[$n]="'https://" . $xbox[$n]['picture'] . "''";
-		echo "<img src=$pict_link[$n]";
-		$n++;
-	}
+
 ?>
 
 
