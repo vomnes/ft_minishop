@@ -2,7 +2,7 @@
       function ft_mysqli_query($query, $connection, $action)
       {
         if (mysqli_query($connection, $query))
-            ;
+            return ;
         else
             exit ();
       }
