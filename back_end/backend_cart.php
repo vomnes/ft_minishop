@@ -22,8 +22,8 @@ function add_elem_cart_session($quantity)
                                   'picture'=> $pict_link,
                                   'price'=> $row[price],
                                   'platform'=> $row[platform],
-                                  'quantity'=> $quantity,
-                                  'total'=> intval($row[price]) * intval($quantity));
+                                  'quantity'=> $_GET[quantity],
+                                  'total'=> intval($row[price]) * intval($_GET[quantity]));
     $_SESSION['nb_elem']++;
   }
 }
