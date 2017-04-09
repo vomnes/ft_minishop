@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['loggued_on_user'] === "")
+if ($_SESSION['loggued_on_user'] == "")
 {
   echo "<li><a href=\"./log.php\">Login</a></li>";
 }
