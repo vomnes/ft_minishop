@@ -2,9 +2,11 @@
 </div>
 </center>
 <div class="block" id="middle_block">
+	</br>
 	<?php
 	$up= ucfirst($_GET[platform]);
-	echo "<T2>$up</T2>" ?>
+	echo "<center><T2>$up</T2></center>" ?>
+</br>
 <?php
 	include('../back_end/backend_loop.php');
 ?>

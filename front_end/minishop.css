@@ -46,6 +46,12 @@ FAMILY{
 LOG{
   margin-left: -35px;
 }
+LOGIN{
+  color:green;
+  float:right;
+  margin-right: 25%;
+  line-height: 75px;
+}
 
 ERROR{
   color:green;
@@ -128,7 +134,7 @@ width:all;
 .header{
   background-color:#061539;
 	width:100%;
-	height:65px;
+	height:75px;
   position:fixed;
   top:0px;
   left:0px;

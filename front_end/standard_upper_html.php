@@ -20,7 +20,7 @@
       <T1>
       <?php
           if ($_SESSION['loggued_on_user'] != "")
-              echo "Hello " . $_SESSION['loggued_on_user'];
+              echo "<LOGIN>Hello " . $_SESSION['loggued_on_user'] . "</LOGIN>";
       ?>
       </T1>
     	<div id="nav-menu">
