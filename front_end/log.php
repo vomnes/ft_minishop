@@ -1,5 +1,5 @@
 <?php
-if ($_SESSION['loggued_on_user'] !== "")
+if ($_SESSION['loggued_on_user'] != "")
 {
 		header("Location: ../front_end/index.php");
 }

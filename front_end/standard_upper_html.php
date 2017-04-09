@@ -41,10 +41,9 @@
       <div class="block  side_block" id="block_left">
       	<br /><T2>Platform</T2><br /><br /><hr>
       	<div class="links">
-      		<a href="./Xbox.php">Xbox ONE</a><br /><hr>
-      		<a href="./PS4.php">PlayStation 4</a><br /><hr>
-      		<a href="./Steam.php">Steam</a></li><br /><hr>
-      		<a href="./Battle.php">Battle.net</a><br /><hr>
-      		<a href="./Switch.php">Switch</a><br />
+      		<a href="./xbox.php">Xbox ONE</a><br /><hr>
+      		<a href="./play.php">PlayStation 4</a><br /><hr>
+      		<a href="./steam.php">Steam</a></li><br /><hr>
+      		<a href="./battle.php">Battle.net</a><br /><hr>
+      		<a href="./switch.php">Switch</a><br /><hr>
       	</div>
-?>
