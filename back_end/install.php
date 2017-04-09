@@ -80,7 +80,6 @@
           id_user INT,
           id_product INT,
           price_product INT,
-          data DATE,
           quantity INT
       )";
       ft_mysqli_query($cart, $connection, "Create table cart");

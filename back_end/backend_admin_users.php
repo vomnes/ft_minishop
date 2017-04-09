@@ -10,6 +10,7 @@ function show_table_users($cn)
   $query_result = mysqli_query($cn, $query);
   echo "<table>\n";
   echo "<tr>\n";
+  echo "<th>id user</th>";
   echo "<th>Login</th>";
   echo "<th>Password</th>\n";
   echo "<th>Family name</th>\n";
@@ -22,6 +23,7 @@ function show_table_users($cn)
       $pict_link = "'https://" . $row['picture'] . "''";
       $video = "'https://" . $row['video']. "''";
       echo "<tr>\n";
+      echo "<th>$row[id_user]</th>";
       echo "<th>$row[login]</th>";
       echo "<th>Encrypted</th>\n";
       echo "<th>$row[family_name]$</th>\n";

@@ -14,16 +14,14 @@ function show_table_cart($cn)
   echo "<th>id_product</th>\n";
   echo "<th>price_product</th>\n";
   echo "<th>quantity</th>\n";
-  echo "<th>order date</th>\n";
   echo "</tr>\n";
   while ($row = mysqli_fetch_assoc($query_result))
   {
       echo "<tr>\n";
-      echo "<th>$row[id_customer]</th>";
+      echo "<th>$row[id_user]</th>";
       echo "<th>$row[id_product]</th>\n";
       echo "<th>$row[price_product]</th>\n";
       echo "<th>$row[quantity]</th>\n";
-      echo "<th>" . date_format($row['date'], 'd/m/Y H:i:s') . "</th>";
       echo "</tr>\n";
   }
   echo "</table>\n";

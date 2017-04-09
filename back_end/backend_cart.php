@@ -17,8 +17,10 @@ function add_elem_cart_session()
     $get_data = "SELECT * FROM games WHERE product_id=$_GET[add_id]";
     $id_data = mysqli_query($cn, $get_data);
     $row = mysqli_fetch_assoc($id_data);
+    $product_id = $_GET[add_id];
     $pict_link="https://" . $row[picture];
     $_SESSION['cart'][$_SESSION['nb_elem']] = array('name'=> $row[name],
+                                  'product_id'=> $product_id,
                                   'picture'=> $pict_link,
                                   'price'=> $row[price],
                                   'platform'=> $row[platform],
