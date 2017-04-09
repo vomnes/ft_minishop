@@ -54,7 +54,8 @@
             $query_result = mysqli_query($cn, $query);
             while ($row = mysqli_fetch_assoc($query_result))
             {
-                echo "<a href='../front_end/products.php?platform=$row[name]'>$row[name]</a><br /><hr>";
+                $up = ucfirst($row[name]);
+                echo "<a href='../front_end/products.php?platform=$row[name]'>$up</a><br /><hr>";
             }
           }
           list_platformes($cn);
