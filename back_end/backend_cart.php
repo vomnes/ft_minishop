@@ -34,7 +34,7 @@ function print_cart()
   session_start();
   if ($_GET['add_id'] !== "")
   {
-    echo "<table>\n";
+    echo "<table class=\"cart\";>\n";
     echo "<tr>\n";
     echo "<th width=100px;>Product id</th>\n";
     echo "<th width=100px;>Game Name</th>\n";

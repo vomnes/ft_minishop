@@ -28,11 +28,8 @@
     		<nav>
     			<ul>
     				<li><a href="./index.php">Home</a></li>
-    				<li><a href="./best.php">Best Seller</a></li>
     				<li><a href="./cart.php">Cart</a></li>
-            <?php
-        				include('./login_logout_section.php');
-            ?>
+            <?php include('./login_logout_section.php');?>
     			</ul>
     		</T1>
     		</nav>
