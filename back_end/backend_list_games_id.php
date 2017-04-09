@@ -14,7 +14,7 @@ function list_games($cn)
       echo "<option>$row[product_id]";
   }
   echo "</select>\n";
-  echo "<br/><br />\n";
+  echo "<br/>\n";
 }
 list_games($cn);
 ?>

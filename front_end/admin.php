@@ -48,7 +48,7 @@
                 <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
             </form>
             <T1>
-              <pass_c>Modif Platform Name </pass_c>
+              <pass_c>Update Platform Name </pass_c>
               <form  action="../back_end/backend_admin_update_platform.php" method="POST">
                 <T1>
                   <pass_c>Select Platform </pass_c> <?php list_platforms($cn, "id_platform"); ?><br/>
@@ -79,6 +79,19 @@
                 <?php include('../back_end/backend_list_games_id.php'); ?>
               </T1>
                 <input type="submit" name="submit" title="Delete game" id="submit" value="Delete game"/>
+            </form>
+            <T1>Update data game</T1></br >
+            <form  action="../back_end/backend_admin_update_game.php" method="POST">
+              <T1>
+                <pass_c>Select game id to update</pass_c> <?php list_games($cn); ?>
+                <pass_c>Name</pass_c> <input type="text" name="name" id="pass_input"/><br />
+                <pass_c>Picture link (without http://)</pass_c> <input type="text" name="picture" id="pass_input"/><br />
+                <pass_c>Price</pass_c> <input type="text" name="price" id="pass_input"/><br />
+                <pass_c>Video link - Embed Youtube (without http://) </pass_c> <input type="text" name="video" id="pass_input"/><br />
+                <pass_c>Details</pass_c> <input type="text" name="details" id="pass_input"/><br />
+                <pass_c>Platform</pass_c> <?php list_platforms($cn, "name"); ?><br/><br />
+              </T1>
+                <input type="submit" name="submit" title="Update game" id="submit" value="Update game"/>
             </form>
       </div>
     </div>

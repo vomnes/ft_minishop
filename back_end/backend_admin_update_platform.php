@@ -10,5 +10,5 @@ function update_platform($cn, $id, $new_name)
     mysqli_query($cn, $update_name);
     header("Location: ../front_end/admin.php?action=platform_updated");
 }
-update_platform($cn, mysqli_real_escape_string($cn, $_POST['delete_category']), mysqli_real_escape_string($cn, $_POST['new_name']));
+update_platform($cn, mysqli_real_escape_string($cn, $_POST['delete_game']), mysqli_real_escape_string($cn, $_POST['new_name']));
 ?>
