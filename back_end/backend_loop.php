@@ -49,7 +49,7 @@ while ($n != $len)
 	<T1  class=\"game_details\">$details</T1></br>
 	<T1  class=\"game_price\">$price</T1>
 	<a id=\"submit_add\" href=\"../front_end/cart.php?add_id=$id\">Add to cart</a>
-	</br><hr style=\"margin-top: 110px\"><br />
+	</br><hr style=\"margin-top: 135px\"><br />
 	</div>";
 	$n++;
 }
