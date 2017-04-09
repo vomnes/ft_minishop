@@ -2,7 +2,7 @@
 </div>
 </center>
 <div class="block" id="middle_block">
-	<img src="https://d37wg8gb8tk3bf.cloudfront.net/img/logos/xb1_logo.png"><br/><br />
+	<center><img src="https://d37wg8gb8tk3bf.cloudfront.net/img/logos/xb1_logo.png"><br/><br /></center>
 <?php
 	include('../back_end/backend_loop.php');
 ?>

@@ -2,7 +2,7 @@
 </div>
 </center>
 <div class="block" id="middle_block">
-<img src="http://vignette4.wikia.nocookie.net/wowwiki/images/d/d2/Logo_battlenet.png/revision/latest?cb=20130924163400" style="width:20%;">
+<center><img src="http://vignette4.wikia.nocookie.net/wowwiki/images/d/d2/Logo_battlenet.png/revision/latest?cb=20130924163400" style="width:20%;"><br/><br /><center>
 <?php
 include('../back_end/backend_loop.php');
 ?>

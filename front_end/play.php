@@ -2,7 +2,7 @@
 </div>
 </center>
 <div class="block" id="middle_block">
-	<img src="http://www.imsfsogdatabase.com/ps4.png" style="width:50%;">
+	<center><img src="http://www.imsfsogdatabase.com/ps4.png" style="width:50%;"><br/><br /></center>
 <?php
 		include('../back_end/backend_loop.php');
 ?>

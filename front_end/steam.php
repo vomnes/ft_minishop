@@ -2,7 +2,7 @@
 </div>
 </center>
 <div class="block" id="middle_block">
-	<img src="http://www.userlogos.org/files/logos/jumpordie/steam_02.png">
+	<center><img src="http://www.userlogos.org/files/logos/jumpordie/steam_02.png"><br/><br /></center>
 <?php
 	include('../back_end/backend_loop.php');
 ?>
