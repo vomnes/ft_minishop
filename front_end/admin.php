@@ -101,6 +101,7 @@
               </T1>
                 <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
             </form>
+            <T1> Management</T1></br >
       </div>
     </div>
   </center>

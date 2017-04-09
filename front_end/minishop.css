@@ -200,6 +200,10 @@ color:green;
   font-size: 15px;
 }
 
+#submit_add:hover{
+  background-color: #00c4ff;
+}
+
 #nav-menu
 {
 	float: right;

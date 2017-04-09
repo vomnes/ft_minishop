@@ -50,7 +50,7 @@ while ($n != $len)
 	<T1  class=\"game_price\">$price</T1>
 	<form  action=\"../back_end/backend_cart.php\" method=\"POST\">
 	<T1>
-		<input type=\"submit\" name=\"add\" title=\"+\" id=\"submit_add\" value=\"+\"/>
+		<input type=\"submit\" name=\"add\" title=\"Add to Cart\" id=\"submit_add\" value=\"Add to Cart\"/>
 	</T1>
 	</form>
 	</br><hr style=\"margin-top: 110px\"><br />

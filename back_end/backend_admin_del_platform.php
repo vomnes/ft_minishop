@@ -12,7 +12,10 @@ function delete_platforms($cn, $name)
     mysqli_query($cn, $del_platform);
     header("Location: ../front_end/admin.php?action=Platform_deleted");
   }
-  header("Location: ../front_end/admin.php?action=Platform_not_deleted");
+  else
+  {
+    header("Location: ../front_end/admin.php?action=Platform_not_deleted");
+  }
 }
-delete_platforms($cn, mysqli_real_escape_string($cn, $_POST['category']));
+delete_platforms($cn, mysqli_real_escape_string($cn, $_POST['delete_category']));
 ?>

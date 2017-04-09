@@ -31,7 +31,7 @@
       $platforms = "CREATE TABLE platforms
       (
         id_platform INT PRIMARY KEY AUTO_INCREMENT,
-        name VARCHAR(255),
+        name VARCHAR(255)
       )";
       ft_mysqli_query($platforms, $connection, " Create table platforms");
       $add_platform = "INSERT INTO platforms (name)
@@ -74,6 +74,13 @@
       )";
       ft_mysqli_query($users, $connection, "Create table users");
       add_user('admin', 'admin', 'admin', 'admin', 'admin', 1, $connection);
+      $cart = "CREATE TABLE cart
+      (
+          id_user INT,
+          id_product INT,
+          price_product INT
+      )";
+      ft_mysqli_query($cart, $connection, "Create table cart");
     }
     $connection = mysqli_connect('localhost', 'root', 'root');
     if (mysqli_connect_errno()) {
