@@ -48,7 +48,7 @@ LOG{
 }
 
 ERROR{
-  color:red;
+  color:green;
   font-size: 42px;
   text-align:center;
   font-family:'Lobster', cursive;
@@ -79,7 +79,16 @@ width:all;
   border-radius: 5px;
   width:20%;
   background-color:#162954;
+  border: 2px solid white;
   color:white;
+
+}
+
+#submit:hover{
+  background: linear-gradient(top, #161539 0%, #4F628E 80%);
+	background: -moz-linear-gradient(top, #161539 0%, #4F628E 80%);
+	background: -webkit-linear-gradient(top, #161539 0%,#4F628E 80%);
+  background-color: #00c4ff;
 }
 
 #log_input{
@@ -190,23 +199,35 @@ color:green;
     margin-right: 70px;
 }
 
+  #submit_number{
+    float:right;
+    margin-right: 290px;
+    margin-top: 10px;
+    color:white;
+  }
+
 #submit_add{
-  width: 15%;
+  width: auto;
   height: 10%;
-  margin-top: 40px;
+  margin-top: 0px;
   padding: 15px;
   background-color: green;
   border-radius: 5px;
   border: 2px solid white;
   float:right;
-  margin-right: -70px;
+  margin-right: -400px;
   color:white;
-  font-size: 20px;
+  line-height: 5px;
+  font-size: 14px;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
 }
 
+
 #submit_add:hover{
+  background: linear-gradient(top, #161539 0%, #4F628E 80%);
+	background: -moz-linear-gradient(top, #161539 0%, #4F628E 80%);
+	background: -webkit-linear-gradient(top, #161539 0%,#4F628E 80%);
   background-color: #00c4ff;
 }
 
