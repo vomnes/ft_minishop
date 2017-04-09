@@ -11,6 +11,7 @@ function add_platforms($cn, $name)
     $add_platform = "INSERT INTO platforms (name) VALUES ('$name')";
     mysqli_query($cn, $add_platform);
     header("Location: ../front_end/admin.php?action=Platform_added");
+    return ;
   }
   header("Location: ../front_end/admin.php?action=Platform_not_added");
 }

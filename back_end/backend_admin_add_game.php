@@ -23,5 +23,5 @@ add_game(mysqli_real_escape_string($cn, $_POST['name']),
         mysqli_real_escape_string($cn, $_POST['price']),
         mysqli_real_escape_string($cn, $_POST['video']),
         mysqli_real_escape_string($cn, $_POST['details']),
-        mysqli_real_escape_string($cn, $_POST['platform']), $cn);
+        mysqli_real_escape_string($cn, $_POST['category']), $cn);
 ?>
