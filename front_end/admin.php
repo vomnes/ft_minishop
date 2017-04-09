@@ -97,12 +97,24 @@
             <?php include ('../back_end/backend_admin_users.php'); ?>
             <form  action="../back_end/backend_admin_del_users.php" method="POST">
               <T1>
-                <pass_c>Login to delete </pass_c> <input type="text" name="login" id="pass_input"/><br/><br/>
+                <pass_c>Login to delete </pass_c><input type="text" name="login" id="pass_input"/><br/><br/>
               </T1>
                 <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
             </form>
-            <T1>Carts Management - History</T1></br >
+            <T1>Cart Management - History</T1></br >
             <?php include ('../back_end/backend_admin_cart.php'); ?>
+            <form  action="../back_end/backend_admin_customer_orders.php" method="POST">
+              <T1>
+                <pass_c>Delete customer orders - Select id_customer </pass_c><input type="text" name="id_customer" id="pass_input"/><br/><br/>
+              </T1>
+                <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
+            </form>
+            <form  action="../back_end/backend_admin_id_cart.php" method="POST">
+              <T1>
+                <pass_c>Delete cart - Select id_cart </pass_c><input type="text" name="id_cart" id="pass_input"/><br/><br/>
+              </T1>
+                <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
+            </form>
       </div>
     </div>
   </center>

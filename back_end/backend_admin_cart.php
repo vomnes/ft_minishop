@@ -10,6 +10,7 @@ function show_table_cart($cn)
   $query_result = mysqli_query($cn, $query);
   echo "<table>\n";
   echo "<tr>\n";
+  echo "<th>id_cart</th>";
   echo "<th>id_customer</th>";
   echo "<th>id_product</th>\n";
   echo "<th>price_product</th>\n";
@@ -18,6 +19,7 @@ function show_table_cart($cn)
   while ($row = mysqli_fetch_assoc($query_result))
   {
       echo "<tr>\n";
+      echo "<th>$row[id_cart]</th>";
       echo "<th>$row[id_user]</th>";
       echo "<th>$row[id_product]</th>\n";
       echo "<th>$row[price_product]</th>\n";

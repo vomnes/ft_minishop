@@ -26,7 +26,7 @@ function show_table_users($cn)
       echo "<th>$row[id_user]</th>";
       echo "<th>$row[login]</th>";
       echo "<th>Encrypted</th>\n";
-      echo "<th>$row[family_name]$</th>\n";
+      echo "<th>$row[family_name]</th>\n";
       echo "<th>$row[first_name]</th>\n";
       echo "<th>$row[email]</th>\n";
       if ($row['is_admin'] == 0)
