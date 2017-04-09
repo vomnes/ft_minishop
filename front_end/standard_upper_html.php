@@ -2,7 +2,7 @@
     session_start();
     if ($_SESSION['is_admin'] === 1)
     {
-      // header("Location: ../front_end/admin.php");
+      header("Location: ../front_end/admin.php");
     }
 ?>
     <html lang="fr">
@@ -41,10 +41,23 @@
       <div class="block  side_block" id="block_left">
       	<br /><T2>Platform</T2><br /><br /><hr>
       	<div class="links">
-      		<a href="./xbox.php">Xbox ONE</a><br /><hr>
-      		<a href="./play.php">PlayStation 4</a><br /><hr>
-      		<a href="./steam.php">Steam</a></li><br /><hr>
-      		<a href="./battle.php">Battle.net</a><br /><hr>
-      		<a href="./switch.php">Switch</a><br /><hr>
+          <?php
+          $cn = mysqli_connect('localhost', 'root', 'root');
+          if (mysqli_connect_errno()) {
+              die ("Connection failed: " . mysqli_connect_error() . "\n");
+          }
+          mysqli_select_db($cn, 'ft_minishop');
+          function list_platformes($cn)
+          {
+            $query = "SELECT * FROM platforms";
+            $query_result = mysqli_query($cn, $query);
+            while ($row = mysqli_fetch_assoc($query_result))
+            {
+
+                echo "<a href='../front_end/products.php?platform=$row[name]'>$row[name]</a><br /><hr>";
+            }
+          }
+          list_platformes($cn);
+          ?>
       	</div>
       </div>

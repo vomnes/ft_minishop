@@ -30,23 +30,8 @@ function check_plateform($query_result, $platform_check)
 	}
 	return($good);
 }
-
-function curPageURL() {
- $pageURL = 'http';
- if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
- $pageURL .= "://";
- if ($_SERVER["SERVER_PORT"] != "80") {
-  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
- } else {
-  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
- }
- return $pageURL;
-}
 $query_result = connect_and_return("*", "games");
-$url=curPageURL();
-preg_match_all('/.*\/(.{0,}).php\.*/e', $url, $greped);
-$platform = $greped[1][0];
-$data = check_plateform($query_result, $platform);
+$data = check_plateform($query_result, $_GET['platform']);
 $n = 0;
 $len = count($data);
 while ($n != $len)
