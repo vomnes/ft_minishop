@@ -101,9 +101,9 @@ width:all;
 }
 #middle_block{
   background-color:#133253;
-  position:relative;
+  position:table;
 	width:1200px;
-	height:auto;
+
 	margin-left:300px;
 	padding:1%;
   border : 0.5px solid white;
@@ -153,7 +153,40 @@ color:green;
 }
 
 .product {
+  width:100%;
+  height:300px;
+  margin : 0 auto;
+}
 
+.game_name{
+  margin-left: 464px;
+  margin-top: 20px;
+}
+
+.game_id{
+  margin-left: -600px;
+}
+
+.game_video{
+  float:left;
+  margin-top:-80px;
+}
+
+.game_img{
+    float:left;
+    margin-right: 60px;
+    margin-top: 10px;
+    height: 250px;
+}
+
+.game_details {
+    margin-left: 40px;
+    margin-top: 200px!important;
+}
+
+.game_price {
+  float: right;
+    margin-right: 70px;
 }
 
 #nav-menu

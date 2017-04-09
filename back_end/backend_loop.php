@@ -58,13 +58,12 @@ while ($n != $len)
 	$video = "'https://" . $data[$n]['video']. "''";
 	$id = $data[$n]['product_id'];
 	echo "<div class=\"product\">
-	<img src=$pict_link[$n] width=200px;>
-	<T2>$name</T2></br>
-	<T1>$id</T1><br />
-	<iframe width=\"420\" height=\"315\" src=$video></iframe>
-	<T1>$details</T1></br>
-	<T1>$price</T1></br>
-	</br><hr>
+	<img src=$pict_link[$n] width=\"200px\" class=\"game_img\">
+	<T2 class=\"game_name\">$name</T2>	<T1 class=\"game_id\">$id</T1><br /><br /><br />
+	<iframe class=\"game_video\" width=\"420\" height=\"250\" src=$video></iframe></br>
+	<T1  class=\"game_details\">$details</T1></br>
+	<T1  class=\"game_price\">$price</T1></br>
+	</br><hr style=\"margin-top: 110px\">
 	</div>";
 	$n++;
 }
