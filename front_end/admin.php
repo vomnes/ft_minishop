@@ -93,6 +93,14 @@
               </T1>
                 <input type="submit" name="submit" title="Update game" id="submit" value="Update game"/>
             </form>
+            <T1>Users Management</T1></br >
+            <?php include ('../back_end/backend_admin_users.php'); ?>
+            <form  action="../back_end/backend_admin_del_users.php" method="POST">
+              <T1>
+                <pass_c>Login to delete </pass_c> <input type="text" name="login" id="pass_input"/><br/><br/>
+              </T1>
+                <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
+            </form>
       </div>
     </div>
   </center>
