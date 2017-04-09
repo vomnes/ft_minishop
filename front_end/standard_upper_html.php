@@ -47,4 +47,4 @@
       		<a href="./Battle.php">Battle.net</a><br /><hr>
       		<a href="./Switch.php">Switch</a><br />
       	</div>
-?>
+      </div>
