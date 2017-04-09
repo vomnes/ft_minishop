@@ -62,8 +62,13 @@ while ($n != $len)
 	<T2 class=\"game_name\">$name</T2>	<T1 class=\"game_id\">$id</T1><br /><br /><br />
 	<iframe class=\"game_video\" width=\"420\" height=\"250\" src=$video></iframe></br>
 	<T1  class=\"game_details\">$details</T1></br>
-	<T1  class=\"game_price\">$price</T1></br>
-	</br><hr style=\"margin-top: 110px\">
+	<T1  class=\"game_price\">$price</T1>
+	<form  action=\"../back_end/backend_cart.php\" method=\"POST\">
+	<T1>
+		<input type=\"submit\" name=\"add\" title=\"+\" id=\"submit_add\" value=\"+\"/>
+	</T1>
+	</form>
+	</br><hr style=\"margin-top: 110px\"><br />
 	</div>";
 	$n++;
 }
