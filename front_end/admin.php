@@ -23,6 +23,8 @@
     <div>
       <div class="block" id="middle_block">
           <T2>ft_minishop - Administrator Area</T2></br >
+          <?php echo "<ERROR>$_GET[action]</ERROR><br/>"; ?>
+          <T1>Platforms Management</T1></br >
           <?php include('../back_end/backend_admin_platform.php'); ?>
           <div class="form">
             <form  action="../back_end/backend_admin_add_platform.php" method="POST">
@@ -37,8 +39,28 @@
               </T1>
                 <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
             </form>
-              <?php echo $_GET['action'] ?>
             </div>
+            <T1>Games Management</T1></br >
+            <?php include('../back_end/backend_admin_games.php'); ?>
+            <T1>Add Game</T1></br >
+            <form  action="../back_end/backend_admin_add_game.php" method="POST">
+              <T1>
+                <pass_c>Name</pass_c> <input type="text" name="name" id="pass_input"/><br />
+                <pass_c>Picture link (without http://)</pass_c> <input type="text" name="picture" id="pass_input"/><br />
+                <pass_c>Price</pass_c> <input type="text" name="price" id="pass_input"/><br />
+                <pass_c>Video link - Embed Youtube (without http://) </pass_c> <input type="text" name="video" id="pass_input"/><br />
+                <pass_c>Details</pass_c> <input type="text" name="details" id="pass_input"/><br />
+                <pass_c>Platform</pass_c> <input type="text" name="platform" id="pass_input"/><br/><br />
+              </T1>
+                <input type="submit" name="submit" title="Add game" id="submit" value="Add game"/>
+            </form>
+            <T1>Delete Game</T1></br >
+            <form  action="../back_end/backend_admin_del_game.php" method=POST>
+              <T1>
+                <pass_c>Delete game : enter id game</pass_c> <input type="text" name="delete_game" id="pass_input"/><br/><br />
+              </T1>
+                <input type="submit" name="submit" title="Delete game" id="submit" value="Delete game"/>
+            </form>
       </div>
     </div>
   </center>
