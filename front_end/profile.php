@@ -12,6 +12,13 @@
 			</T1>
 				<input type="submit" name="submit" title="OK" id="submit" value="OK"/>
 			</form>
+			<form  action="../back_end/backend_delete_account.php" method="POST">
+				<T1>
+					<pass_c>/!\ Delete Account /!\<br />Enter your login please to confirme<br />the deletion of your account</pass_c><br /><br />
+					<input type="login" name="login" id="pass_input"/><br/><br />
+				</T1>
+					<input type="submit" name="submit" title="/!\ Delete Account /!\" id="submit" value="OK"/>
+			</form>
 			<?php echo $_GET['action'] ?>
 		</div>
 </div>
