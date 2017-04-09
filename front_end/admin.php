@@ -101,7 +101,8 @@
               </T1>
                 <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
             </form>
-            <T1> Management</T1></br >
+            <T1>Carts Management - History</T1></br >
+            <?php include ('../back_end/backend_admin_cart.php'); ?>
       </div>
     </div>
   </center>

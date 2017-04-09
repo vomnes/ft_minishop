@@ -11,6 +11,7 @@
     	<title>ft_minishop</title>
     	<link rel="stylesheet" type="text/css" href="minishop.css">
     	<link href="https://fonts.googleapis.com/css?family=Lobster|Press+Start+2P" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     </head>
     <body>
     	<div class="header">

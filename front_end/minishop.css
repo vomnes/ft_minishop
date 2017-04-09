@@ -73,6 +73,8 @@ width:all;
 }
 
 #submit {
+  font-size: 25px;
+  font-family: 'Lobster', cursive;
   margin-left: 10px;
   border-radius: 5px;
   width:20%;
@@ -189,15 +191,19 @@ color:green;
 }
 
 #submit_add{
-  width: 10%;
+  width: 15%;
+  height: 10%;
   margin-top: 40px;
+  padding: 15px;
   background-color: green;
   border-radius: 5px;
   border: 2px solid white;
   float:right;
   margin-right: -70px;
   color:white;
-  font-size: 15px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
 }
 
 #submit_add:hover{
@@ -289,4 +295,27 @@ nav ul ul li a { padding: 15px 0px; color: white; font-size: 13px;}
 nav ul ul li a:hover { background: #2E4172; }
 nav ul ul ul { position: absolute; left: 100%; top:0; }
 
+}
+
+table {
+color: #333; /* Lighten up font color */
+font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+width: 640px;
+border: 2px black solid;
+border-collapse:collapse;
+border-spacing: 0;
+}
+
+td, th { border: 1px solid white; height: 30px; } /* Make cells a bit taller */
+
+th {
+background: #F3F3F3; /* Light grey background */
+font-family: 'Lobster', cursive;
+font-size: 20px;
+font-weight: bold; /* Make sure they're bold */
+}
+
+td {
+background: black; /* Lighter grey background */
+text-align: center; /* Center our text */
 }

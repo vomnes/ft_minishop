@@ -76,9 +76,12 @@
       add_user('admin', 'admin', 'admin', 'admin', 'admin', 1, $connection);
       $cart = "CREATE TABLE cart
       (
+          id_cart INT PRIMARY KEY AUTO_INCREMENT,
           id_user INT,
           id_product INT,
-          price_product INT
+          price_product INT,
+          data DATE,
+          quantity INT
       )";
       ft_mysqli_query($cart, $connection, "Create table cart");
     }

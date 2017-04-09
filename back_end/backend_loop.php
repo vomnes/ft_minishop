@@ -48,11 +48,7 @@ while ($n != $len)
 	<iframe class=\"game_video\" width=\"420\" height=\"250\" src=$video></iframe></br>
 	<T1  class=\"game_details\">$details</T1></br>
 	<T1  class=\"game_price\">$price</T1>
-	<form  action=\"../back_end/backend_cart.php\" method=\"POST\">
-	<T1>
-		<input type=\"submit\" name=\"add\" title=\"Add to Cart\" id=\"submit_add\" value=\"Add to Cart\"/>
-	</T1>
-	</form>
+	<a id=\"submit_add\" href=\"../front_end/cart.php?add_id=$id\">Add to cart</a>
 	</br><hr style=\"margin-top: 110px\"><br />
 	</div>";
 	$n++;

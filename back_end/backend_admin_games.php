@@ -26,7 +26,7 @@ function show_table_games($cn)
       echo "<th>$row[product_id]</th>";
       echo "<th>$row[name]</th>\n";
       echo "<th><img src=$pict_link width=50px;></th>\n";
-      echo "<th>$row[price]$</th>\n";
+      echo "<th>$row[price]</th>\n";
       echo "<th><iframe width=\"150\" height=\"100\" src=$video></iframe></th>\n";
       echo "<th>$row[details]</th>\n";
       echo "<th>$row[platform]</th>\n";
