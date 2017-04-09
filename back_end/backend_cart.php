@@ -1,5 +1,5 @@
 <?php
-function add_elem_cart_session($quantity)
+function add_elem_cart_session()
 {
   session_start();
   if ($_SESSION['cart'] === "")
@@ -34,6 +34,7 @@ function print_cart()
   {
     echo "<table>\n";
     echo "<tr>\n";
+    echo "<th width=100px;>Product id</th>\n";
     echo "<th width=100px;>Game Name</th>\n";
     echo "<th width=50px;>Picture</th>\n";
     echo "<th width=150px;>Price</th>\n";
@@ -45,6 +46,7 @@ function print_cart()
     $total = 0;
     while ($id < $_SESSION['nb_elem'])
     {
+      echo "<th width=100px;>" . $id . "</th>\n";
       echo "<th width=100px;>" . $_SESSION[cart][$id][name] . "</th>\n";
       echo "<th width=50px;>" . "<img src=" . $_SESSION[cart][$id][picture] . " width=50px;>" . "</th>\n";
       echo "<th width=150px;>" . $_SESSION[cart][$id][price] . "</th>\n";
@@ -57,7 +59,7 @@ function print_cart()
     }
   }
   echo "<tr>\n";
-  echo "<th height=200px; colspan=\"5\">Total</th>\n";
+  echo "<th height=200px; colspan=\"6\">Total</th>\n";
   echo "<th width=150px;>$total $</th>\n";
   echo "</tr>\n";
   echo "</table><br/>\n";

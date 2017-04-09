@@ -28,7 +28,7 @@
     if (auth(protect_input($cn, $_POST['login_a']), protect_input($cn, $_POST['passwd_a']), $cn) == 1)
     {
       $_SESSION['loggued_on_user'] = protect_input($cn, $_POST['login_a']);
-      header("Location: ../front_end/index.php");
+      header("Location: ../front_end/cart.php");
     }
     else if (auth(protect_input($cn, $_POST['login_a']), protect_input($cn, $_POST['passwd_a']), $cn) == 2)
     {

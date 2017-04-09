@@ -24,8 +24,8 @@ include('standard_upper_html.php');?>
 			<form  action="../back_end/backend_create_account.php" method="POST">
 				<T1>
 					Login*: <input type="text" name="login" id="log_input"/><br /><br />
-					<pass>Password*:</pass> <input type="password" name="password" id="pass_input"/><br/><br />
-					<pass_c>Confirm Password*:</pass_c> <input type="password" name="password_conf" id="pass_input"/><br/ ><br />
+					<pass>Password*:</pass><input type="password" name="password" id="pass_input"/><br/><br />
+					<pass_c>Confirm Password*:</pass_c><input type="password" name="password_conf" id="pass_input"/><br/ ><br />
 					Name*: <input type="text" name="first_name" id="log_input"/><br /><br />
 					<family>Family Name*:</family> <input type="text" name="family_name" id="log_input"/><br /><br />
 					E-mail*: <input type="text" name="email" id="log_input"/><br /><br />
