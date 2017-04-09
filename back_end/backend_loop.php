@@ -48,7 +48,7 @@ while ($n != $len)
 	<iframe class=\"game_video\" width=\"420\" height=\"250\" src=$video></iframe></br>
 	<T1  class=\"game_details\">$details</T1></br>
 	<T1  class=\"game_price\">$price</T1>
-	<form action=\"../back_end/backend_admin_push_on_cart.php?add_id=$id\" method=\"POST\">
+	<form action=\"../back_end/backend_admin_push_on_cart.php?add_id=$id\" method=\"POST\" id=\"submit_number\">
 			<select name=\"number_product\" size=\"1\">
 						<option>1</option>
 						<option>2</option>

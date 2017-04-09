@@ -15,7 +15,7 @@ include('standard_upper_html.php');?>
 			</T1>
 				<input type="submit" name="submit" title="OK" id="submit" value="OK"/>
 		</form>
-		<?php echo $_GET['login_action'] ?>
+		<ERROR><?php echo $_GET['login_action'] ?></ERROR>
 	</div>
 </br ></br ></br ><hr></br >
 	<T1>If you don't have any account yet, please</T1><br />
