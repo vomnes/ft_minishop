@@ -14,7 +14,7 @@
 			</form>
 			<form  action="../back_end/backend_delete_account.php" method="POST">
 				<T1>
-					<pass_c>/!\ Delete Account /!\<br />Enter your login please to confirme<br />the deletion of your account</pass_c><br /><br />
+					<ERROR style="color:red;">Delete Account</ERROR><br /><T1>Please, enter your login to confirm the deletion of your account</T1><br /><br />
 					<input type="login" name="login" id="pass_input"/><br/><br />
 				</T1>
 					<input type="submit" name="submit" title="/!\ Delete Account /!\" id="submit" value="OK"/>

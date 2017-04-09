@@ -2,10 +2,11 @@
 </div>
 </center>
 <div class="block" id="middle_block">
+	</br>
 	<?php
-	$up = strtoupper($_GET[platform]);
-	echo "<T2>$up</T2>" ?>
-	<center><img src="http://www.myiconfinder.com/uploads/iconsets/5e2a8fe966bf6f56fc29234d1e5817b8.png" width=200px;><br/><br /></center>
+	$up= ucfirst($_GET[platform]);
+	echo "<center><T2>$up</T2></center>" ?>
+</br>
 <?php
 	include('../back_end/backend_loop.php');
 ?>
