@@ -62,6 +62,7 @@
       add_game("OverWatch", "jeu.video/wp-content/uploads/2016/09/overwatch-jaquette.png", 40, "www.youtube.com/embed/FqnKB22pOC0", "Best Team play game ever", "battle", $connection);
       add_game("OverWatch", "jeu.video/wp-content/uploads/2016/09/overwatch-jaquette.png", 40, "www.youtube.com/embed/FqnKB22pOC0", "Best Team play game ever", "xbox", $connection);
       add_game("OverWatch", "jeu.video/wp-content/uploads/2016/09/overwatch-jaquette.png", 40, "www.youtube.com/embed/FqnKB22pOC0", "Best Team play game ever", "ps4", $connection);
+      add_game("Zelda : Breath Of The Wild", "cdn1.vox-cdn.com/uploads/chorus_asset/file/7802177/NintendoSwitch_TLOZBreathoftheWild_boxart_1800.jpg", 55, "www.youtube.com/embed/1rPxiXXxftE", "Brand new Zelda", "switch", $connection);
       $users = "CREATE TABLE users
       (
           id_user INT PRIMARY KEY AUTO_INCREMENT,
