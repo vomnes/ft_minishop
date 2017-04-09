@@ -88,7 +88,7 @@ width:all;
   width: 30%;
 }
 .side_block{
-	height:335px;
+	height:auto;;
 	width:250px;
 	float:left;
   position:relative;
@@ -103,12 +103,11 @@ width:all;
   background-color:#133253;
   position:relative;
 	width:1200px;
-	height:70%;
+	height:auto;
 	margin-left:300px;
 	padding:1%;
   border : 0.5px solid white;
   margin-top:95px;
-	height:100%;
 }
 
 .block{
@@ -151,6 +150,10 @@ color:green;
   font-family:'Lobster', cursive;
   text-shadow: 2px 2px black;
   text-decoration: none!important;
+}
+
+.product {
+
 }
 
 #nav-menu
