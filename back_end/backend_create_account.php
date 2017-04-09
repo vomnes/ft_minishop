@@ -17,7 +17,11 @@
       return FALSE;
     }
     session_start();
-    if ($_POST['login'] === "" || $_POST['password'] === "" || $_POST['family_name'] === "" || $_POST['first_name'] === "" || $_POST['email'] === "")
+    if (protect_input($cn, $_POST['login']) === "" ||
+    protect_input($cn, $_POST['password']) === "" ||
+    protect_input($cn, $_POST['family_name']) === "" ||
+    protect_input($cn, $_POST['first_name']) === "" ||
+    protect_input($cn, $_POST['email']) === "")
     {
       header("Location: ../front_end/log.php?action=Error_input");
     }

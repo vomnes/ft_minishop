@@ -26,8 +26,10 @@ if (mysqli_connect_errno()) {
     die ("Connection failed: " . mysqli_connect_error() . "\n");
 }
 mysqli_select_db($cn, 'ft_minishop');
-if ($_SESSION['loggued_on_user'] != '' && $_POST['old_pass'] != '' && $_POST['new_pass'] != '')
-    change_pw($_SESSION['loggued_on_user'], $_POST['old_pass'], $_POST['new_pass'], $cn);
+if ($_SESSION['loggued_on_user'] != '' && protect_input($cn, $_POST['old_pass']) != ''
+&& protect_input($cn, $_POST['new_pass'] != ''))
+    change_pw($_SESSION['loggued_on_user'], protect_input($cn, $_POST['old_pass']),
+    protect_input($cn, $_POST['new_pass']), $cn);
 else
     header("Location: ../front_end/profile.php?action=Error_input");
 ?>

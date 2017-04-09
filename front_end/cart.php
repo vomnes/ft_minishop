@@ -18,19 +18,6 @@ include('standard_upper_html.php');
 			<T1>Delete last product </T1>
 					<input type="submit" name="delete_id" title="delete_id" id="submit" value="Delete"/>
 			</form>';
-			echo '<form  action="../back_end/backend_modify_elem_cart.php" method="POST">
-			<T1>Modify quantity product - Select id : </T1>
-					<select name=\"id_product\" size=\"1\">';
-					$id = 0;
-					while ($id < count($_SESSION['cart']))
-					{
-							echo "<option>$id</option>";
-							$id++;
-					}
-					echo '</select><br/>
-					<input type="submit" name="clean_cart" title="Clean Cart" id="submit" value="+"/>
-					<input type="submit" name="clean_cart" title="Clean Cart" id="submit" value="-"/>
-			</form>';
 		}
 		else
 		{
