@@ -14,6 +14,7 @@
     }
     function add_user($login, $password, $family_name, $first_name, $email, $is_admin, $connection)
     {
+      $password = hash('whirlpool', $password);
       $add_user = "INSERT INTO users (login, password, family_name, first_name, email, is_admin)
                     VALUES ('$login', '$password', '$family_name', '$first_name', '$email', $is_admin)";
       ft_mysqli_query($add_user, $connection, "Add user -> $login");

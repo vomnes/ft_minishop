@@ -22,7 +22,23 @@
   <center class="container">
     <div>
       <div class="block" id="middle_block">
-
+          <T2>ft_minishop - Administrator Area</T2></br >
+          <?php include('../back_end/backend_admin_platform.php'); ?>
+          <div class="form">
+            <form  action="../back_end/backend_admin_add_platform.php" method="POST">
+              <T1>
+                <pass_c>Add Platform </pass_c> <input type="text" name="add_category" id="pass_input"/>
+              </T1>
+                <input type="submit" name="submit" title="Add it !" id="submit" value="Add it !"/>
+            </form>
+            <form  action="../back_end/backend_admin_del_platform.php" method="POST">
+              <T1>
+                <pass_c>Delete Platform </pass_c> <input type="text" name="delete_category" id="pass_input"/>
+              </T1>
+                <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
+            </form>
+              <?php echo $_GET['action'] ?>
+            </div>
       </div>
     </div>
   </center>
