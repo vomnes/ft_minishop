@@ -10,7 +10,7 @@ function list_platforms($cn, $var)
   $query_result = mysqli_query($cn, $query);
   echo "<select name=\"delete_category\" value=\"delete_category\" size=\"1\">\n";
   while ($row = mysqli_fetch_assoc($query_result))
-  {
+  { 
       echo "<option>$row[$var]";
   }
   echo "</select>\n";

@@ -9,6 +9,7 @@ function show_table_games($cn)
   $query = "SELECT * FROM games";
   $query_result = mysqli_query($cn, $query);
   echo "<table>\n";
+  echo "<T1>\n";
   echo "<tr>\n";
   echo "<th>Id</th>";
   echo "<th>Name</th>\n";
@@ -18,10 +19,12 @@ function show_table_games($cn)
   echo "<th>Details</th>\n";
   echo "<th>Platform</th>\n";
   echo "</tr>\n";
+  echo "</T1>\n";
   while ($row = mysqli_fetch_assoc($query_result))
   {
       $pict_link = "'https://" . $row['picture'] . "''";
       $video = "'https://" . $row['video']. "''";
+      echo "<T1>\n";
       echo "<tr>\n";
       echo "<th>$row[product_id]</th>";
       echo "<th>$row[name]</th>\n";
@@ -32,6 +35,7 @@ function show_table_games($cn)
       echo "<th>$row[platform]</th>\n";
       echo "</tr>\n";
   }
+  echo "</T1>\n";
   echo "</table>\n";
 }
 show_table_games($cn);
