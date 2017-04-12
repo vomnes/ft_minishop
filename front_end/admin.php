@@ -9,7 +9,7 @@
   <meta charset="UTF-8">
 <head>
   <title>ft_minishop</title>
-  <link rel="stylesheet" type="text/css" href="admin.css">
+  <link rel="stylesheet" type="text/css" href="minishop.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Press+Start+2P" rel="stylesheet">
 </head>
 <body>
@@ -29,89 +29,94 @@
   <center class="container">
     <div>
       <div class="block" id="middle_block">
-          <T2>ft_minishop - Administrator Area</T2></br >
+          <br><br/><T4>ft_minishop - Administrator Area<T4></br ><hr>
           <?php echo "<ERROR>$_GET[action]</ERROR><br/>"; ?>
-          <T1>Platforms Management</T1></br >
+          <T3>Platforms Management</T3></br ><br/>
           <?php include('../back_end/backend_admin_platform.php'); ?>
+              </br/><br/>
           <div class="form">
             <form  action="../back_end/backend_admin_add_platform.php" method="POST">
               <T1>
-                <pass_c>Add Platform </pass_c> <input type="text" name="add_category" id="pass_input"/>
+                <T2>Add Platform</T2><br/><input type="text" name="add_category" id="pass_input"/>  <br/>  <br/>
               </T1>
-                <input type="submit" name="submit" title="Add it !" id="submit" value="Add it !"/>
+                <input type="submit" name="submit" title="Add" id="submit" value="Add"/><br/>
             </form>
+        <hr>
             <form  action="../back_end/backend_admin_del_platform.php" method="POST">
               <T1>
-                <pass_c>Delete Platform </pass_c>
+                <T2>Delete Platform</T2><br/>
                 <?php include('../back_end/backend_list_platform.php'); ?>
+                    <br/><br/>
               </T1>
-                <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
+                <input type="submit" name="submit" title="Delete" id="submit" value="Delete"/>
             </form>
-            <T1>
-              <pass_c>Update Platform Name </pass_c>
+            <hr>
+              <T2>Update Platform</T2><br/>
               <form  action="../back_end/backend_admin_update_platform.php" method="POST">
                 <T1>
-                  <pass_c>Select Platform </pass_c> <?php list_platforms($cn, "id_platform"); ?><br/>
-                  <pass_c>New name </pass_c> <input type="text" name="new_name" id="pass_input"/>
+                  Select Platform   <?php list_platforms($cn, "id_platform"); ?><br/>
+                  New name    <input type="text" name="new_name" id="pass_input"/> <br/>
                 </T1>
-                  <input type="submit" name="submit" title="Update it !" id="submit" value="Update it !"/>
+                  <input type="submit" name="submit" title="Update" id="submit" value="Update"/>  <br/>
               </form>
-            </T1>
             </div>
-            <T1>Games Management</T1></br >
-            <?php include('../back_end/backend_admin_games.php'); ?>
-            <T1>Add Game</T1></br >
+            <br/><hr><br/>
+            <T3>Games Management</T3></br ><br/>
+            <?php include('../back_end/backend_admin_games.php'); ?><br/>
+            <T2>Add Game</T2></br >
             <form  action="../back_end/backend_admin_add_game.php" method="POST">
               <T1>
-                <pass_c>Name</pass_c> <input type="text" name="name" id="pass_input"/><br />
-                <pass_c>Picture link (without http://)</pass_c> <input type="text" name="picture" id="pass_input"/><br />
-                <pass_c>Price</pass_c> <input type="text" name="price" id="pass_input"/><br />
-                <pass_c>Video link - Embed Youtube (without http://) </pass_c> <input type="text" name="video" id="pass_input"/><br />
-                <pass_c>Details</pass_c> <input type="text" name="details" id="pass_input"/><br />
-                <pass_c>Platform</pass_c> <?php list_platforms($cn, "name"); ?><br/><br />
+                Name : <input type="text" name="name" id="pass_input"/><br />
+                <esc style="margin-left:-190px;">Picture link (without http://) : <input type="text" name="picture" id="pass_input"/><br />
+                Price : <input type="text" name="price" id="pass_input"/><br />
+                <esc style="margin-left:-310px;">Video link - Embed Youtube (without http://)  : <input type="text" name="video" id="pass_input"/><br />
+                Details : <input type="text" name="details" id="pass_input"/><br />
+                Platform : <?php list_platforms($cn, "name"); ?><br/><br />
               </T1>
                 <input type="submit" name="submit" title="Add game" id="submit" value="Add game"/>
-            </form>
-            <T1>Delete Game</T1></br >
+            </form><br/><hr><br/>
+            <T2>Delete Game</T2></br>
             <form  action="../back_end/backend_admin_del_game.php" method="POST">
               <T1>
-                <pass_c>Select game id</pass_c>
-                <?php include('../back_end/backend_list_games_id.php'); ?>
+                Select game id
+                <?php include('../back_end/backend_list_games_id.php'); ?><br />
               </T1>
                 <input type="submit" name="submit" title="Delete game" id="submit" value="Delete game"/>
-            </form>
-            <T1>Update data game</T1></br >
+            </form><br/><hr><br/>
+            <T2>Update data game</T2></br >
             <form  action="../back_end/backend_admin_update_game.php" method="POST">
               <T1>
-                <pass_c>Select game id to update</pass_c> <?php list_games($cn); ?>
-                <pass_c>Name</pass_c> <input type="text" name="name" id="pass_input"/><br />
-                <pass_c>Picture link (without http://)</pass_c> <input type="text" name="picture" id="pass_input"/><br />
-                <pass_c>Price</pass_c> <input type="text" name="price" id="pass_input"/><br />
-                <pass_c>Video link - Embed Youtube (without http://) </pass_c> <input type="text" name="video" id="pass_input"/><br />
-                <pass_c>Details</pass_c> <input type="text" name="details" id="pass_input"/><br />
-                <pass_c>Platform</pass_c> <?php list_platforms($cn, "name"); ?><br/><br />
+              Select game id to update <?php list_games($cn); ?>
+                Name : <input type="text" name="name" id="pass_input"/><br />
+                <esc style="margin-left:-190px;"> Picture link (without http://) : <input type="text" name="picture" id="pass_input"/><br/>
+                Price : <input type="text" name="price" id="pass_input"/><br />
+                <esc style="margin-left:-320px;">Video link - Embed Youtube (without http://)  : <input type="text" name="video" id="pass_input"/><br />
+                Details : <input type="text" name="details" id="pass_input"/><br />
+                Platform : <?php list_platforms($cn, "name"); ?><br/><br />
               </T1>
                 <input type="submit" name="submit" title="Update game" id="submit" value="Update game"/>
             </form>
-            <T1>Users Management</T1></br >
-            <?php include ('../back_end/backend_admin_users.php'); ?>
+            <br><hr><br>
+            <T3>Users Management</T3></br ><br>
+            <?php include ('../back_end/backend_admin_users.php'); ?> <br/><br>
             <form  action="../back_end/backend_admin_del_users.php" method="POST">
               <T1>
-                <pass_c>Login to delete </pass_c><input type="text" name="login" id="pass_input"/><br/><br/>
+                <pass_c>Login to delete : </pass_c><input type="text" name="login" id="pass_input"/><br/><br/>
               </T1>
                 <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
             </form>
-            <T1>Cart Management - History</T1></br >
-            <?php include ('../back_end/backend_admin_cart.php'); ?>
+            <br/><hr><br/>
+            <T3>Cart Management - History</T3></br ><br>
+            <?php include ('../back_end/backend_admin_cart.php'); ?><br><br />
             <form  action="../back_end/backend_admin_customer_orders.php" method="POST">
               <T1>
-                <pass_c>Delete customer orders - Select id_customer </pass_c><input type="text" name="id_customer" id="pass_input"/><br/><br/>
+                <esc style="margin-left:-140px;">Delete customer orders - Select id_customer : <input type="text" name="id_customer" id="pass_input"/><br/><br/>
               </T1>
                 <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
             </form>
             <form  action="../back_end/backend_admin_id_cart.php" method="POST">
               <T1>
-                <pass_c>Delete cart - Select id_cart </pass_c><input type="text" name="id_cart" id="pass_input"/><br/><br/>
+              Delete cart - Select id_cart : <input type="text" name="id_cart" id="pass_input"/><br/><br/>
               </T1>
                 <input type="submit" name="submit" title="Delete it !" id="submit" value="Delete it !"/>
             </form>

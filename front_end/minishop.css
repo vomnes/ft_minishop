@@ -33,7 +33,7 @@ text-shadow: 2px 2px black;
 BODY {
 background-position:top center;
 background-size:100%;
-color:black;
+color:white;
 background-color: black;
 background-image:url("http://www.freebiesgallery.com/wp-content/uploads/2012/08/dark-website-backgrounds-11.jpg");
 background-repeat: repeat;
@@ -88,13 +88,10 @@ width:all;
 #submit {
   font-size: 25px;
   font-family: 'Lobster', cursive;
-  margin-left: 10px;
   border-radius: 5px;
-  width:20%;
   background-color:#162954;
   border: 2px solid white;
   color:white;
-
 }
 
 #submit:hover{
@@ -356,6 +353,7 @@ border-spacing: 0;
 td, th { border: 1px solid white; height: 30px; }
 
 th {
+
 background: #;
 font-family: 'Lobster', cursive;
 font-size: 20px;
