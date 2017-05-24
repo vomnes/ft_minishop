@@ -1,5 +1,5 @@
 # ft_minishop
-Rush0 of the PHP Piscine - Following your first week (5 days) of training on web, you will have to -in a weekend– create a mini e-commerce online shop.
+Rush00 of the PHP Piscine School 42 - Following your first week (5 days) of training on web, you will have to create a mini e-commerce online shop (in a weekend).
 
 Our first big project in PHP Procedural realised during in a 48 hours rush.
 
