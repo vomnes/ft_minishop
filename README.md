@@ -3,6 +3,10 @@ Rush0 of the PHP Piscine - Following your first week (5 days) of training on web
 
 Our first big project in PHP Procedural realised during in a 48 hours rush.
 
+## Stack
+- PHP Procedural
+- MySQL
+
 ## Features
 - Product list
 - Product section
