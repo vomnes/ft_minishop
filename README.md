@@ -10,18 +10,18 @@ Our first big project in PHP Procedural in a rush of 48 hours.
 - Administration section (Manage sections, products, users, carts)
 
 ### Products
-![alt text](https://github.com/vomnes/ft_minishop/tree/master/screens/products.png "List products")
+![alt text](https://github.com/vomnes/ft_minishop/blob/master/screens/products.png "List products")
 
 ### Cart
-![alt text](https://github.com/vomnes/ft_minishop/tree/master/screens/cart.png "Current cart")
+![alt text](https://github.com/vomnes/ft_minishop/blob/master/screens/cart.png "Current cart")
 
 ### Login/Sign
-![alt text](https://github.com/vomnes/ft_minishop/tree/master/screens/log:sign.png "Login Sign")
+![alt text](https://github.com/vomnes/ft_minishop/blob/master/screens/log:sign.png "Login Sign")
 
 ### Profile section
-![alt text](https://github.com/vomnes/ft_minishop/tree/master/screens/yourprofile.png "Your profile")
+![alt text](https://github.com/vomnes/ft_minishop/blob/master/screens/yourprofile.png "Your profile")
 
 ### Administration section
-![alt text](https://github.com/vomnes/ft_minishop/tree/master/screens/admin1.png "Administration section 1")
+![alt text](https://github.com/vomnes/ft_minishop/blob/master/screens/admin1.png "Administration section 1")
 
-![alt text](https://github.com/vomnes/ft_minishop/tree/master/screens/admin2.png "Administration section 2")
+![alt text](https://github.com/vomnes/ft_minishop/blob/master/screens/admin2.png "Administration section 2")
